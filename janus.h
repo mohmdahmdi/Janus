@@ -16,7 +16,7 @@
 void init();
 void add(const char *file);
 void commit(const char *message);
-void log();
+void jlog();
 void status();
 
 #endif
