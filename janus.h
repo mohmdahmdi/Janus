@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <dirent.h>
+#include <sys/stat.h>
 
 #define VCS_DIR ".janus"
 #define OBJECTS_DIR ".janus/objects"
