@@ -8,7 +8,7 @@ void status() {
 
   FILE *index = fopen(INDEX_FILE, "r");
   if (!index) {
-    perror("Failed to oppen index file")
+    perror("Failed to oppen index file");
     return;
   }
 

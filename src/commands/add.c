@@ -1,6 +1,6 @@
 #include "../janus.h"
 
-void add(char *file) {
+void add(const char *file) {
   FILE *index = fopen(INDEX_FILE, "a");
   if(!index) {
     perror("Failed to open index file");

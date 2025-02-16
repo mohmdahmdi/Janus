@@ -5,7 +5,7 @@ void commit(const char *message){
   snprintf(commit_hash, 33, "%ld", time(NULL));
 
   char commit_path[100];
-  smprintf(commit_path, sizeof(commit_path), "%s/ %s", OBJECTS_DIR, commit_hash);
+  snprintf(commit_path, sizeof(commit_path), "%s/ %s", OBJECTS_DIR, commit_hash);
   FILE *commit_file = fopen(commit_path, "w");
   if (!commit_path){
     perror("Failed to create commit object");
@@ -18,6 +18,7 @@ void commit(const char *message){
     return;
   }
 
+  char file_path[256];
   while (fgets(file_path, sizeof(file_path), index)) {
     file_path[strcspn(file_path, "\n")] = 0;
     FILE *src = fopen(file_path, "r");
