@@ -1,4 +1,4 @@
-#include "janus.h"
+#include "../janus.h"
 
 void commit(const char *message){
   char commit_hash[33];

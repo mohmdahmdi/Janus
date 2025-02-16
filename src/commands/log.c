@@ -1,4 +1,4 @@
-#include "janus.h"
+#include "../janus.h"
 
 void jlog() {
   FILE *logs = fopen(LOGS_FILE, "r");

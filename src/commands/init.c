@@ -1,4 +1,4 @@
-#include "janus.h"
+#include "../janus.h"
 
 void init() {
   mkdir(VCS_DIR, 0777);

@@ -1,4 +1,4 @@
-#include "janus.h"
+#include "../janus.h"
 
 void status() {
   if (access(VCS_DIR, F_OK) == -1){

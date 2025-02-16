@@ -1,4 +1,4 @@
-#include "janus.h"
+#include "../janus.h"
 
 void add(char *file) {
   FILE *index = fopen(INDEX_FILE, "a");
