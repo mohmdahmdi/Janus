@@ -18,6 +18,15 @@ void commit(const char *message){
     return;
   }
 
+  fseek(file, 0, SEEK_END);
+  long file_size = ftell(file);
+
+  if (file_size == 0){
+    printf("nothing to commit")
+    return;
+  }
+  
+
   char file_path[256];
   while (fgets(file_path, sizeof(file_path), index)) {
     file_path[strcspn(file_path, "\n")] = 0;
